@@ -1,0 +1,9 @@
+{
+  "name": "stack_nodejs_angular2_express",
+  "version": "1.0.0",
+  "description": "An empty stack to improve your future development processes",
+  "main": "index.js",
+  "repository": "https://github.com/gigouni/stack_nodejs_angular2_express.git",
+  "author": "Nicolas GIGOU",
+  "license": "MIT"
+}
