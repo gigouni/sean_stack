@@ -9,8 +9,8 @@ Just a JS stack binding some cool technologies.
 
 ## Documentations
 
-* [Client side README]('https://github.com/gigouni/stack_nodejs_angular2_express/blob/master/client/README.md')
-* [Server-side README]('https://github.com/gigouni/stack_nodejs_angular2_express/blob/master/server/README.md')
+* [Client side README](https://github.com/gigouni/stack_nodejs_angular2_express/blob/master/client/README.md)
+* [Server-side README](https://github.com/gigouni/stack_nodejs_angular2_express/blob/master/server/README.md)
 
 ## tl;dr
 
