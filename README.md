@@ -19,7 +19,7 @@ $ cd your_projects_folder
 $ mkdir my_project
 $ cd my_project
 $ yarn init
-$ ng new yout_submodule_name
+$ ng new your_submodule_name
 $ mkdir server
 $ cd server
 $ yarn init
@@ -39,7 +39,7 @@ $ node server.js
 First, if you don't have a client folder, generate it
 
 ```bash
-$ ng new your_project_name
+$ ng new your_submodule_name
 ```
 
 Run the client
