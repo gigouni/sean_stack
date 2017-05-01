@@ -37,4 +37,5 @@ $ cd stack_nodejs_angular4_express_sequelize/server
 $ node server.js
 ```
 
-Now, open your browser here: [127.0.0.1:4200](http://127.0.0.1:4200)
+Now, open your browser here for the **client**: [127.0.0.1:4200](http://127.0.0.1:4200) and 
+here for the **server**: [127.0.0.1:3000](http://127.0.0.1:3000)
