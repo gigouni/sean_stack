@@ -1,6 +1,5 @@
 # Sequelize + Express + Angular4 + NodeJS
 
-
 Just a JS stack binding some cool technologies.
 
 ## Nota Bene
@@ -15,45 +14,26 @@ Just a JS stack binding some cool technologies.
 
 ## tl;dr
 
+Get the stack and the dependencies
+
 ```shell
 $ cd your_projects_folder
-$ mkdir my_project
-$ cd my_project
-$ yarn init
-$ ng new your_submodule_name
-$ mkdir server
-$ cd server
-$ yarn init
-$ touch server.js
-$ npm install --save express path morgan cookie-parser body-parser ejs
-$ cd ../client
-$ ng serve
+$ git clone https://github.com/gigouni/stack_nodejs_angular4_express_sequelize
+$ cd stack_nodejs_angular4_express_sequelize/server && npm i
+$ cd ../client && npm i
+``` 
 
-(in another terminal)
+Run the client side (on a first terminal)
 
-$ cd your_projects_folder/my_project/server
-$ node server.js
-```
-
-## Getting started
-
-First, if you don't have a client folder, generate it
-
-```bash
-$ ng new your_submodule_name
-```
-
-Run the client
-
-```bash
-$ cd client
+```shell
+$ cd stack_nodejs_angular4_express_sequelize/client
 $ ng serve
 ```
 
-Then, run the server
+Run the server side (on a second terminal)
 
-```bash
-$ cd ../server
+```shell
+$ cd stack_nodejs_angular4_express_sequelize/server
 $ node server.js
 ```
 
