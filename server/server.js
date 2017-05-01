@@ -1,11 +1,15 @@
+/* global __dirname */
+
 /**
- * server.js
- * Entry point of the server side application
+ * server.js.
+ * Entry point of the server side application.
  *
- * @author Nicolas GIGOU
- * @date 05/04/2017
- * @description The server settings
+ * @author Nicolas GIGOU.
+ * @description The server settings.
  */
+
+const _HOST = "127.0.0.1";
+const _PORT = 3000;
 
 /*
  * --------------------------------------------
@@ -14,72 +18,66 @@
  * --------------------------------------------
  */
 // Express framework and other tools/modules
-const express       = require('express');
-const path          = require('path');
-const logger        = require('morgan');
-const cookieParser  = require('cookie-parser');
-const bodyParser    = require('body-parser');
+const express = require('express');
+const path = require('path');
+const logger = require('morgan');
+const bodyParser = require('body-parser');
+
+// Custom helper functions
+var Helper = require('./Helper');
+var h = new Helper();
+h.l("---- SERVER.JS: NPM modules ready.");
 
 // Routes
-const test         = require('./routes/test');
+const api_sequelizer = require('./routes/sequelizer');
+const api_sample = require('./routes/samples');
+h.l("---- SERVER.JS: Routes ready.");
 
 // Application
 const app = express();
+h.l("---- SERVER.JS: Express framework is running... Please wait...");
 
 /*
  * --------------------------------------------
- * View engine setup and static files
+ * Settings
  * --------------------------------------------
  */
-app.set('views', path.join(__dirname, '../client/src/'));
-app.set('view engine', 'ejs');
-app.engine('html', require('ejs').renderFile);
-
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded(
-    {
-        extended: false
-    }
-));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '../client/src')));
-app.use(express.static(path.join(__dirname, '../client/src/app')));
-
 
 /*
  * --------------------------------------------
  * Routing
  * --------------------------------------------
  */
-app.use('/api/test', test);
+app.use('/api/sequelizer', api_sequelizer);
+app.use('/api/samples', api_sample);
 
 /*
  * --------------------------------------------
  * Server settings
  * --------------------------------------------
  */
-var server = app.listen(3000, function()
-{
-    var host = '127.0.0.1';
+var server = app.listen(_PORT, function() {
+    var host = _HOST;
     var port = server.address().port;
 
-    console.log("         _______           ");
-    console.log("       _/       \\_        ");
-    console.log("      / |       | \\       ");
-    console.log("     /  |__   __|  \\      ");
-    console.log("    |__/((o| |o))\\__|     ");
-    console.log("    |      | |      |      ");
-    console.log("    |\\     |_|     /|     ");
-    console.log("    | \\           / |     ");
-    console.log("     \\| /  ___  \\ |/     ");
-    console.log("      \\ | / _ \\ | /      ");
-    console.log("       \\_________/        ");
-    console.log("        _|_____|_          ");
-    console.log("   ____|_________|____     ");
-    console.log("  /                   \\   ");
+    h.l("         _______           ");
+    h.l("       _/       \\_        ");
+    h.l("      / |       | \\       ");
+    h.l("     /  |__   __|  \\      ");
+    h.l("    |__/((o| |o))\\__|     ");
+    h.l("    |      | |      |      ");
+    h.l("    |\\     |_|     /|     ");
+    h.l("    | \\           / |     ");
+    h.l("     \\| /  ___  \\ |/     ");
+    h.l("      \\ | / _ \\ | /      ");
+    h.l("       \\_________/        ");
+    h.l("        _|_____|_          ");
+    h.l("   ____|_________|____     ");
+    h.l("  /                   \\   ");
 
-    console.log('Your project is waiting you at http://%s:%s', host, port);
+    h.l('The application is waiting you at http://' + host + ':' + port);
 });
 
 module.exports = app;
