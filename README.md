@@ -9,8 +9,8 @@ Just a JS stack binding some cool technologies.
 
 ## Documentations
 
-* [Client side README](https://github.com/gigouni/stack_nodejs_angular2_express/blob/master/client/README.md)
-* [Server-side README](https://github.com/gigouni/stack_nodejs_angular2_express/blob/master/server/README.md)
+* [Client side README](https://github.com/gigouni/sean_stack/blob/master/client/README.md)
+* [Server-side README](https://github.com/gigouni/sean_stack/blob/master/server/README.md)
 
 ## tl;dr
 
@@ -18,22 +18,22 @@ Get the stack and the dependencies
 
 ```shell
 $ cd your_projects_folder
-$ git clone https://github.com/gigouni/stack_nodejs_angular4_express_sequelize
-$ cd stack_nodejs_angular4_express_sequelize/server && npm i
+$ git clone https://github.com/gigouni/sean_stack
+$ cd sean_stack/server && npm i
 $ cd ../client && npm i
 ``` 
 
 Run the client side (on a first terminal)
 
 ```shell
-$ cd stack_nodejs_angular4_express_sequelize/client
+$ cd sean_stack/client
 $ ng serve
 ```
 
 Run the server side (on a second terminal)
 
 ```shell
-$ cd stack_nodejs_angular4_express_sequelize/server
+$ cd sean_stack/server
 $ node server.js
 ```
 
