@@ -1,6 +1,6 @@
 # Sequelize + Express + Angular4 + NodeJS
 
-Just a JS stack binding some cool technologies.
+Do you know Sean ? He's such a nice guy. He's setting a JS stack just for you to bind some cool technologies!
 
 ## Nota Bene
 
@@ -38,4 +38,4 @@ $ node server.js
 ```
 
 Now, open your browser here for the **client**: [127.0.0.1:4200](http://127.0.0.1:4200) and 
-here for the **server**: [127.0.0.1:3000](http://127.0.0.1:3000)
+here for the **server**: [127.0.0.1:3000](http://127.0.0.1:3000/api/samples/)
