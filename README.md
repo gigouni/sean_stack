@@ -1,11 +1,12 @@
-# MySQL + Express + Angular4+ NodeJS
+# Sequelize + Express + Angular4 + NodeJS
+
 
 Just a JS stack binding some cool technologies.
 
 ## Nota Bene
 
 * Javascript version: ECMAScript 5.1
-* MySQL not implemented yet
+* Sequelize ORM working with mysql package
 
 ## Documentations
 
